@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Survey Form</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html lang="en">
+  
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>first page</title>
+        <link rel="stylesheet" href="./styles/index.processed.css">
+    </head>
+   
+    <body>
+        <header>
+            <h1 id="title">Organics or Not?</h1>
+            <p class="description">Thank you for taking out time to fill this survey form!
+            </p>
+        </header>
+        <form id="survey-form" action="nowhere">
+            <!-- Name Input field -->
+            <div class="form-element">
+                <div class="label">
+                    <label id="name-label" for="name">Name</label>
+                </div>
+                <div class="input">
+                    <input type="text" placeholder="Enter your full name" id="name" required>
+                </div>
+            </div>
+            <!-- Email Input field -->
+            <div class="form-element">
+                <div class="label">
+                    <label id="email-label" for="name">Email</label>
+                </div>
+                <div class="input">
+                    <input type="email" placeholder="Enter your email" id="name" required>
+                </div>
+            </div>
+            <!-- Age Input field -->
+            <div class="form-element">
+                <div class="label">
+                    <label id="age-label" for="name">Age</label>
+                </div>
+                <div class="input">
+                    <select id=dropdown required>
+                        <option disabled selected value>Select an option</option>
+                        <option>Less than 18</option>
+                        <option>18-25</option>
+                        <option>25-45</option>
+                        <option>45-60</option>
+                        <option>60 and above</option>
+                    </select>
+                </div>
+            </div>
+            <!-- Marital Staus Input field -->
+            <div class="form-element">
+                <div class="label">
+                    <label id="marital status-label" for="name">Marital Staus (Optional)</label>
+                </div>
+                <div class="input">
+                    <select id=dropdown required>
+                        <option disabled selected value>Select an option</option>
+                        <option>Single</option>
+                        <option>Married</option>
+                        <option>Prefer not to say</option>
+                    </select>
+                </div>
+            </div>
+            <!-- Radio  -->
+            <div class="form-element">
+                <div class="label">
+                    <label>Have you heard of Organics Skin Care and Hair Care Products</label>
+                </div>
+                <div class="input-radio1">
+                    <div>
+                        <input type="radio" name="user-knowledge" value=1>Yes
+                    </div>
+                    <div>
+                        <input type="radio" name="user-knowledge" value=2>No
+                    </div>
+                    <p>(If No,click <a href="https://www.dayasorganics.com"">here</a> to find out more on Organics)</p>                    
+                </div>
+            </div>
+            <div class="form-element">
+                <div class="label">
+                    <label for="user-usge">Do you use Organics Skin Care and Hair Care Products</label>
+                </div>
+                <div class="input-radio2">
+                    <div>
+                        <input name="user-usage" value="yes" type="radio"/>Yes
+                    </div>
+                    <div>
+                        <input name="user-usage" value="no" type="radio"/>No                        
+                    </div>
+                    <div>
+                        <input name="user-usage" value="not often" type="radio"/>Not Often                        
+                    </div>
+                </div>
+            </div>
+            <div class="form-element">
+                <div class="label">
+                    <label for="checkbox">From the options listed below, select the ones you prefer</label>
+                </div>
+                <div class="input">
+                    <input type="checkbox" name="prefer" id="organicProducts"> Organic Products<br>
+                    <input type="checkbox" name="prefer" id="non-organicProducts"> Non-Organic Products<br>
+                    <input type="checkbox" name="prefer" id="organicRawMaterials"> Organic Raw Materials<br>
+                    <input type="checkbox" name="prefer" id="refinedProducts"> Refined Products<br>
+                    <input type="checkbox" name="prefer" id="organicButters"> Organic Butters<br>
+                    <input type="checkbox" name="prefer" id="organicPowders"> Organic Powders<br>
+                    <input type="checkbox" name="prefer" id="essentialOils"> Essential Oils<br>
+                    <input type="checkbox" name="prefer" id="carrierOils"> Carrier Oils<br>
+                    <input type="checkbox" name="prefer" id="home-madeScrubs"> Home-Made Scrubs<br>
+                    <input type="checkbox" name="prefer" id="already-madeScrubs"> Already-Made Scrubs<br>
+                    <input type="checkbox" name="prefer" id="chemicalScrubs"> Chemical Scrubs<br>
+                    <input type="checkbox" name="prefer" id="sugarScrubs"> Sugar Scrubs              
+                </div>
+            </div>
+            <div class="form-element">
+                <div class="label">
+                    <label>Would you refer Organics Skin Care and Hair Care Products to a friend?</label>
+                </div>
+                <div class="input">
+                    <div class="yes">
+                        <input name="user-refer" value="yes" type="radio" id="radio1"/>Yes <br>
+                        <input name="user-refer" value="no" type="radio" id="radio2"/>No
+                    </div>
+                    <div class="hidden">
+                        <p id="yes">If Yes, Why?</p>
+                        <textarea name="reasons" id="reasons" cols="30" rows="10" placeholder="Enter your reasons here"></textarea>
+                    </div>
+                    <div class="hidden">
+                        <p id="no">If No, Why?</p>
+                        <textarea name="reasons" id="reasons" placeholder="Enter your reasons here" cols="30" rows="10"></textarea>                        
+                    </div>
+                </div>
+            </div>
+            <div class="form-element">
+                <div class="label">
+                    <label>Any Comments or suggestions?</label>
+                </div>
+                <div class="input">
+                    <textarea name="comments" id="comments" placeholder="Enter your comments here" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+            <div class="form-element">
+                <button type="submit" id="submit">Submit</button>
+            </div>
+            <footer>
+                Copyright by Daya's Organics, 2021
+                      </footer>         
+        </form>
+    </body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
